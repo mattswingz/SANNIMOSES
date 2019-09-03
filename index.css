@@ -1,0 +1,14 @@
+body{
+background-image: url(hg.jpg);
+}
+li{
+    float: left;
+    padding: 3%;
+    margin-top: 0%;
+    
+}
+ul{
+    margin-left: 30%;
+    margin-top: -14%;
+    text-decoration: none;
+}

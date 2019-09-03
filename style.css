@@ -1,0 +1,43 @@
+body{
+    margin: 0%;
+    padding: 15px 10px;
+    background-repeat: no-repeat;
+    
+}
+h1{
+    font-size: 400%;
+    text-align: center;
+    color:green;
+    margin-top: 10px;
+}
+h2{
+    font-size: 200%;
+    text-align: center;
+    color:black;
+    margin-top: -3%;
+}
+h3{
+    font-size: 150%;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 5%;
+   
+}
+.container{
+    text-align: center;
+}
+::placeholder{
+    color: black;
+}
+.main input{
+    width: 35%;
+    padding: 10px 10px;
+
+}
+.me{
+    margin-left: 15%;
+    margin-top: -5%;
+    margin-left: 55%;
+   
+    
+}
