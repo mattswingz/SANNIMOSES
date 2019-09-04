@@ -1,5 +1,5 @@
 body {
-    background-image: url(images8.jpg);
+    background-image: url(../image/images8.jpg);
     background-size: cover;
 }
     *{
@@ -9,12 +9,11 @@ body {
 
 #container h2{
     margin-top: 30px;
-    text-align: ;
+    text-align:center;
 }
 
-#container{
-    margin-left: 250px;
-}
+/*#container{
+    margin-left: 250px;*/
 
 #container input{
     padding: 10px;
@@ -28,4 +27,11 @@ button{
     margin-top: 10px;
     font-family: tahoma;
     font-size: 15px;
+}
+.container{
+    margin: 10% 40%;
+}
+.main input{
+    width: 500px;
+    height: 70px;
 }

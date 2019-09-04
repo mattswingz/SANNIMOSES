@@ -1,5 +1,6 @@
 body{
-background-image: url(hg.jpg);
+background-image: url(../image/hg.jpg);
+background-size: cover;
 }
 li{
     float: left;
@@ -11,4 +12,8 @@ ul{
     margin-left: 30%;
     margin-top: -14%;
     text-decoration: none;
+}
+p{
+    margin: 35%;
+    font-size: 200%;
 }
