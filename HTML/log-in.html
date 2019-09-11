@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>log-in page</title>
+    <link rel="stylesheet" href="../CSS/log-in.css">
+    
+</HEAD>
+<body>
+    <div class="container">
+        <h1 class="label">User Login</h1>
+        <form class="login-form" action="home.html" method="post" name="form" onsubmit="return validate()">
+            <div class="font">Email or Phone</div>
+            <input autocomplete="off" type="text" name="email">
+            <div id="email_error">Please fill in your Email or Phone number</div>
+            <div class="font font2">Passsword</div>
+            <input type="password" name="password">
+            <div id="pass_error">please fill up your password</div>
+            <button type="submit">Login</button>
+
+        </form>
+    </div>
+    <p>1. Both fields should not be blank<br />
+        2.Passwordmust be 6 to 12 character<br />
+        3.usernameshould not start with -,@ and Number
+
+    </p>
+    <script src="../J.SCRIPT/log-in.js"></script>
+</body>
+</html>

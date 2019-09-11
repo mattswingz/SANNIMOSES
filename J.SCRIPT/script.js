@@ -1,3 +1,24 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@mattswingz 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+2
+00mattswingz/SANNIMOSES
+ Code Issues 1 Pull requests 0 Projects 0 Wiki Security Insights Settings
+SANNIMOSES/J.SCRIPT/script.js
+@mattswingz mattswingz first commit
+6bbd969 5 days ago
+45 lines (38 sloc)  1.25 KB
+  
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyDHPpAxa1OW0ZEXKKdk9Nf11wB6aCJBUxk",
@@ -43,3 +64,15 @@
       });
       
       };
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/Reg.css">
 </head>
 <body>
-    <div class="container">
+    <div id="container">
             <h1>REGISTER NOW</h1>
         <div class="main">
                 <input type="text" id="Surname" name="Surname" class="input" placeholder="Enter Your Surname"><br><br>
@@ -33,16 +33,35 @@
              </form>
             </div>
                    <div class="btn">
-                       <button type="button" id="save" >Submit</button>
+                       <button type="button" id="submitData" >Submit</button>
                    </div>
         <h3>Already have an account?,click the login button</h3>
         <div class="me">
-                <button><a href="">login</a></button>
+                <button><a href="../HTML/log-in.html">login</a></button>
         </div>
             </div> 
         </form>
     </div>
 </div>
+
+<div id="sendingLayout">
+    <h1>Please wait</h1>
+    <img src="../image/moses.gif" width="15%" height="15%" class="name">
+    
+</div>
+
+<div id="successLayout">
+    <h1>Congratulation, Registration successeful</h1>
+    <img src="../image/s2.gif" alt="">
+    <button> <a href="log-in.html">login</a> </button>
+</div>
+
+<div id="failedLayout">
+    <h1>Registration failed,Please try again</h1>
+</div>
+
+
+
 
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
