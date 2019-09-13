@@ -63,8 +63,8 @@ body{
 .login-form button:hover{
     background: #151c6a;
 }
-.login-form .email-error,
-.login-form .pass-error{
+.login_form .email-error,
+.login_form .pass-error{
     margin-top: 5px;
     width: 345px;
     font-size: 18px;

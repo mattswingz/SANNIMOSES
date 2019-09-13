@@ -29,18 +29,16 @@ button{
     font-family: tahoma;
     font-size: 15px;
 }
-.container{
-    margin:40% 40%;
-    margin: auto;
-}
+
 .main input{
     width: 500px;
     height: 70px;
+    
 }
 .name{
     margin-left: 40%;
     margin-top: 10%;
 }
 .sendingLayout{
-    font-size: 10px;
+    font-size: 20px;
 }
