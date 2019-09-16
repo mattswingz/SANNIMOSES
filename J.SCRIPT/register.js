@@ -13,9 +13,13 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  console.log("firebase loaded");
+  const firestore=firebase.firestore();
+
 
    //initialize firestore database and save the instance to db variable
    const db=firebase.firestore();
+
 
    //create a collection and empty document and save the instance docRef variable
    const save = document.getElementById("saveData");
@@ -32,7 +36,7 @@
  successLayout.style.display = "none";
  failedLayout.style.display = "none";
 
-let Sname, Lname, Email, Phone, Uname, Pass, CPass;
+let Sname, Lname, Email, Phone, Uname, Pass, Cpass;
  const submitData = document.getElementById("submitData");
 submitData.addEventListener("click", () => {
     Sname =document.getElementById("Surname").value;
@@ -72,10 +76,16 @@ submitData.addEventListener("click", () => {
         
     }
     else{
-        SendData()
-    }
-    
-});
+        firebase.auth().createUserWithEmailAndPassword(Email, Pass).then(function(){
+                    SendData()
+    }).catch(function(error){
+        var errorCode=error.code;
+        var errorMessage=error.Message;
+        console.log("error:"+error);
+
+
+    })
+}})
 
 const SendData = () => {
     container.style.display = "none";
@@ -92,7 +102,7 @@ const SendToDataBase = () => {
     Phone: Phone,
     Username: Uname,
     Password: Pass,
-    CPassword: CPass 
+    Cpassword: CPass 
     })
     .then(function(){
         sendingLayout.style.display = "none";

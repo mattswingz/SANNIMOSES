@@ -1,33 +1,30 @@
 //Validation code for inputs
+var firebaseConfig = {
+    apiKey: "AIzaSyDHPpAxa1OW0ZEXKKdk9Nf11wB6aCJBUxk",
+    authDomain: "olasanni-b57a1.firebaseapp.com",
+    databaseURL: "https://olasanni-b57a1.firebaseio.com",
+    projectId: "olasanni-b57a1",
+    storageBucket: "olasanni-b57a1.appspot.com",
+    messagingSenderId: "766456175952",
+    appId: "1:766456175952:web:c60c476c0675b245"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  console.log("firebase loaded");
 
-var email=document.forms['form']['email'];
-var password=document.forms['form']['password'];
+  let email,pass;
+  const loginpage=document.getElementById("loginbtn");
+  loginpage.addEventListener('click', ()=>{
+      Email=document.getElementById("Email").value;
+      Pass=document.getElementById("Password").value;
 
-var email_error =document.getElementById('email-error');
-var pass_error =document.getElementById('pass-error');
+      firebase.auth().logInWithEmailAndPassword(Email,Pass).then(function(){
+          window.location="index.html";
+      }).catch(function(error){
+          //handle errors here
+          var errorCode=error.code;
+          var errorMessage= error.message;
+          console.log("error:" +error.code);
+      })
 
-email.addEventListener('textInput', email_Varify);
-password.addEventListener('textInput', email_Varify);
-
-function validation(){
-    if(email.value.length<9){
-        email.style.border="1px solid red";
-        email_error.style.display = "block";
-        email-focus();
-        return false;
-
-    }
-    if(password.value.length<6){
-        email.style.border="1px solid red";
-        pass_error.style.display = "block";
-        password-focus();
-        return false;
-    }
-}
-    function email_Varify(){
-        if(email.value.length >=8) {
-            email.style.border="1px solid red";
-            email_error.style.display="none";
-            return true;
-        }
-    }
+  });

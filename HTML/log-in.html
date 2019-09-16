@@ -10,23 +10,25 @@
 </HEAD>
 <body>
     <div class="container">
-        <h1 class="label">User Login</h1>
-        <form class="login-form" action="home.html" method="post" name="form" onsubmit="return validate()">
-            <div class="font">Email or Phone</div>
-            <input autocomplete="off" type="text" name="email">
-            <div id="email_error">Please fill in your Email or Phone number</div>
-            <div class="font font2">Passsword</div>
-            <input type="password" name="password">
-            <div id="pass_error">please fill up your password</div>
-            <button type="submit">Login</button>
+        <div class="main">
+            <form>
+                <div><input type="text" id="Email" name="Email" placeholder="Enter your Email Address"</div><br>
+                <div><input type="text" id="Password" name="Password" placeholder="Password"</div><br>
+                <button type="button" id="loginbtn">login</button><br>
+            
+        </div>
 
         </form>
     </div>
-    <p>1. Both fields should not be blank<br />
-        2.Passwordmust be 6 to 12 character<br />
-        3.username should not start with -,@ and Number
+    
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-firestore.js"></script>
+<script src="../J.SCRIPT/log-in.js"></script>
 
-    </p>
-    <script src="../J.SCRIPT/log-in.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#config-web-app -->
 </body>
 </html>
